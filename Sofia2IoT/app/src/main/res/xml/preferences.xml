@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/app_pref_cat">
+        <ListPreference
+            android:key="@string/pref_sensor_id"
+            android:title="@string/pref_sensor_name"
+            android:summary="@string/pref_sensor_summary"
+            android:defaultValue="0x0117c59bbb5f"
+            android:entries="@array/sensor_names"
+            android:entryValues="@array/sensor_values"/>
+        />
+
+        <EditTextPreference
+            android:key="@string/pref_email"
+            android:title="@string/pref_email_name"
+            android:summary="@string/pref_email_summary"
+            android:defaultValue="mbriceno@minsait.com"/>
+        <EditTextPreference
+            android:key="@string/pref_ontology"
+            android:title="@string/pref_ontology_name"
+            android:summary="@string/pref_ontology_summary" />
+        <EditTextPreference
+            android:key="@string/pref_thinkp"
+            android:title="@string/pref_thinkp_name"
+            android:summary="@string/pref_thinkp_summary" />
+        <EditTextPreference
+            android:key="@string/pref_url"
+            android:title="@string/pref_url_name"
+            android:summary="@string/pref_url_summary" />
+        
+    </PreferenceCategory>
+</PreferenceScreen>

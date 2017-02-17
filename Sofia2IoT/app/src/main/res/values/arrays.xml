@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "sensor_names">
+        <item name = "TAG #1">Sofia2Beacon</item>
+    </string-array>
+    <string-array name = "sensor_values">
+        <item name = "TAG #1">C7:8D:5D:2E:D8:E6</item>
+    </string-array>
+
+</resources>

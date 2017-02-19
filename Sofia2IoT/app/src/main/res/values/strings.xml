@@ -25,38 +25,24 @@
     <string name="pref_sensor_id">pref_sensor_id</string>
     <string name="pref_email">pref_email</string>
     <string name="pref_ontology">pref_ontology</string>
-    <string name="pref_url">pref_url</string>
     <string name="pref_thinkp">pref_thinkp</string>
-    <string name="pref_token">pref_thinkp</string>
+    <string name="pref_token">pref_token</string>
 
 
 
     <!-- Preferences strings -->
     <string name="pref_email_name">Your e-mail address</string>
     <string name="pref_ontology_name">Ontology name</string>
-    <string name="pref_url_name">Sofia2 instance URL</string>
     <string name="pref_thinkp_name">ThinKP name</string>
     <string name="pref_token_name">pref_thinkp</string>
 
     <string name="pref_email_summary">E-mail to be notified</string>
     <string name="pref_ontology_summary">Ontology used</string>
-    <string name="pref_url_summary">URL used</string>
     <string name="pref_thinkp_summary">ThinKP used</string>
     <string name="pref_token_summary">pref_thinkp</string>
 
-    <string name="pref_loc_acc_name">Location accuracy</string>
-    <string name="pref_loc_acc_summary">Radius of maximum tolerated deviation (m)</string>
     <string name="pref_sensor_name">Sensor selection</string>
     <string name="pref_sensor_summary">Identify the related sensor</string>
-    <string name="pref_temp_min_name">Scanning period</string>
-    <string name="pref_temp_min_summary">BLE scanning period (ms)</string>
-    <string name="pref_temp_max_name">No-scanning period</string>
-    <string name="pref_temp_max_summary">BLE no-scanning period</string>
-    <string name="pref_plate_name">Truck plate</string>
-    <string name="pref_plate_summary">Plate identification number for this truck</string>
-    <string name="pref_mqtt_port_name">MQTT Sofia2 port</string>
-    <string name="pref_mqtt_port_summary">Toggle MQTT port to connect to Sofia2</string>
-
     <string name="app_pref_cat">Application settings </string>
 
     <!-- Closing dialog -->

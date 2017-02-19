@@ -89,10 +89,7 @@ public class TrackingService extends Service implements LocationListener, Google
     private int PORT = 1880;
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
     SharedPreferences preferences;
-    private String pref_plate_id;
-    private String pref_temp_min_id;
-    private String pref_temp_max_id;
-    private String pref_loc_acc_id;
+
     private String pref_sensor_id;
     private String pref_email;
     private String pref_token;
@@ -422,7 +419,7 @@ public class TrackingService extends Service implements LocationListener, Google
     private String composeFrame(Location location, boolean event){
         if(location!=null){
             if(event){
-                return "{ \"UPM_Curso_00\": { \"geometry\": { \"coordinates\": [ "+
+                return "{ \""+pref_ontology+"\": { \"geometry\": { \"coordinates\": [ "+
                         location.getLongitude()+", "+location.getLatitude()+" ], \"type\": \"Point\" }, \"" +
                         "email\": \""+pref_email+"\", \"" +
                         "event\": "+event+", \"" +
@@ -431,7 +428,7 @@ public class TrackingService extends Service implements LocationListener, Google
                         "accelZ\": "+accZValue+"}}";
             }
             else{
-                return "{ \"UPM_Curso_00\": { \"geometry\": { \"coordinates\": [ "+
+                return "{ \""+pref_ontology+"\": { \"geometry\": { \"coordinates\": [ "+
                         location.getLongitude()+", "+location.getLatitude()+" ], \"type\": \"Point\" }, \"" +
                         "email\": \""+pref_email+"\", \"" +
                         "event\": "+false+", \"" +
@@ -443,7 +440,7 @@ public class TrackingService extends Service implements LocationListener, Google
         }
         else{
             if(event){
-                return "{ \"UPM_Curso_00\": { \"geometry\": { \"coordinates\": [ "+
+                return "{ \""+pref_ontology+"\": { \"geometry\": { \"coordinates\": [ "+
                         0.0+", "+0.0+" ], \"type\": \"Point\" }, \"" +
                         "email\": \""+pref_email+"\", \"" +
                         "event\": "+event+", \"" +
@@ -452,7 +449,7 @@ public class TrackingService extends Service implements LocationListener, Google
                         "accelZ\": "+accZValue+"}}";
             }
             else{
-                return "{ \"UPM_Curso_00\": { \"geometry\": { \"coordinates\": [ "+
+                return "{ \""+pref_ontology+"\": { \"geometry\": { \"coordinates\": [ "+
                         0.0+", "+0.0+" ], \"type\": \"Point\" }, \"" +
                         "email\": \""+pref_email+"\", \"" +
                         "event\": "+false+", \"" +
@@ -506,7 +503,7 @@ public class TrackingService extends Service implements LocationListener, Google
                     if(bufferFramesLength<bufferFrames.size()){
                         bufferFrames.removeFirst();
                     }
-                    sbr.send(context,TOKEN,KP_INSTANCE,ONTOLOGY_NAME,bufferFrames);
+                    sbr.send(context,pref_token,pref_thinkp,pref_ontology,bufferFrames);
                 }
                 catch( Exception ex ) {
                     Log.i(TAG, "sending ERROR\n" + ex.getMessage() );

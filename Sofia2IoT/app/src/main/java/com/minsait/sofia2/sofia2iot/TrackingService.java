@@ -65,7 +65,7 @@ public class TrackingService extends Service implements LocationListener, Google
     public static final String TAG = "TrackingService";
 
     private final static String TOKEN = "1ac393b3e22f4063bedd8f379f78dcb6";
-    private final static String KP_INSTANCE = "UPM_CURSO_00:UPM_CURSO_00_01";
+    private final static String KP_INSTANCE = "UPM_CURSO_00:UPM_CURSO_00_01_EST";
     private final static String ONTOLOGY_NAME = "UPM_Curso_00";
 
     private final int OFFLINE_MODE = 0;
@@ -418,45 +418,22 @@ public class TrackingService extends Service implements LocationListener, Google
     //TODO Modify this method to update the message to insert in the ontology
     private String composeFrame(Location location, boolean event){
         if(location!=null){
-            if(event){
-                return "{ \""+pref_ontology+"\": { \"geometry\": { \"coordinates\": [ "+
-                        location.getLongitude()+", "+location.getLatitude()+" ], \"type\": \"Point\" }, \"" +
-                        "email\": \""+pref_email+"\", \"" +
-                        "event\": "+event+", \"" +
-                        "accelX\": "+accXValue+", \"" +
-                        "accelY\": "+accYValue+", \"" +
-                        "accelZ\": "+accZValue+"}}";
-            }
-            else{
-                return "{ \""+pref_ontology+"\": { \"geometry\": { \"coordinates\": [ "+
-                        location.getLongitude()+", "+location.getLatitude()+" ], \"type\": \"Point\" }, \"" +
-                        "email\": \""+pref_email+"\", \"" +
-                        "event\": "+false+", \"" +
-                        "accelX\": "+accXValue+", \"" +
-                        "accelY\": "+accYValue+", \"" +
-                        "accelZ\": "+accZValue+"}}";
-            }
-
+            return "{ \""+pref_ontology+"\": { \"geometry\": { \"coordinates\": [ "+
+                    location.getLongitude()+", "+location.getLatitude()+" ], \"type\": \"Point\" }, \"" +
+                    "email\": \""+pref_email+"\", \"" +
+                    "event\": "+event+", \"" +
+                    "accelX\": "+accXValue+", \"" +
+                    "accelY\": "+accYValue+", \"" +
+                    "accelZ\": "+accZValue+"}}";
         }
         else{
-            if(event){
-                return "{ \""+pref_ontology+"\": { \"geometry\": { \"coordinates\": [ "+
-                        0.0+", "+0.0+" ], \"type\": \"Point\" }, \"" +
-                        "email\": \""+pref_email+"\", \"" +
-                        "event\": "+event+", \"" +
-                        "accelX\": "+accXValue+", \"" +
-                        "accelY\": "+accYValue+", \"" +
-                        "accelZ\": "+accZValue+"}}";
-            }
-            else{
-                return "{ \""+pref_ontology+"\": { \"geometry\": { \"coordinates\": [ "+
-                        0.0+", "+0.0+" ], \"type\": \"Point\" }, \"" +
-                        "email\": \""+pref_email+"\", \"" +
-                        "event\": "+false+", \"" +
-                        "accelX\": "+accXValue+", \"" +
-                        "accelY\": "+accYValue+", \"" +
-                        "accelZ\": "+accZValue+"}}";
-            }
+            return "{ \""+pref_ontology+"\": { \"geometry\": { \"coordinates\": [ "+
+                    0.0+", "+0.0+" ], \"type\": \"Point\" }, \"" +
+                    "email\": \""+pref_email+"\", \"" +
+                    "event\": "+event+", \"" +
+                    "accelX\": "+accXValue+", \"" +
+                    "accelY\": "+accYValue+", \"" +
+                    "accelZ\": "+accZValue+"}}";
         }
 
     }

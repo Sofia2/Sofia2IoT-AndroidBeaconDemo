@@ -8,13 +8,17 @@
     <string name="play_menu">Play</string>
     <string name="stop_menu">Stop</string>
 
+    <!-- Splash Screen strings -->
+    <string name="alert_title_loc">Attention</string>
+    <string name="alert_title_msg">This app may use your device location for demo purposes</string>
+
     <!-- Main activity strings -->
     <string name="service_status_text">Tracking service status: </string>
-    <string name="frames_gen_text">Generated frames: </string>
+    <string name="frames_gen_text">Frames: </string>
     <string name="frames_sent_text">Sent frames: </string>
     <string name="latitude_text">Latitude: </string>
     <string name="longitude_text">Longitude: </string>
-    <string name="accuracy_text">Location accuracy (m): </string>
+    <string name="accuracy_text">Loc. accuracy (m): </string>
     <string name="temperature_text">Temperature (ºC):</string>
     <string name="luxometer_text">Obj Temperature (ºC): </string>
     <string name="accZ_text">Acc Z Axis (G):</string>

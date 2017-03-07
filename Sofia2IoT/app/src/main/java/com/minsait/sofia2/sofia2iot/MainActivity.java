@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright 2013-15 Indra Sistemas S.A.
+ * Copyright 2013-17 Indra Sistemas S.A.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,6 +34,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.Menu;
@@ -53,6 +54,7 @@ import com.google.android.gms.location.LocationSettingsRequest;
 import com.google.android.gms.location.LocationSettingsResult;
 import com.google.android.gms.location.LocationSettingsStates;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
+import com.skyfishjy.library.RippleBackground;
 //import com.skyfishjy.library.RippleBackground;
 
 import java.text.SimpleDateFormat;
@@ -111,15 +113,16 @@ public class MainActivity extends AppCompatActivity {
     Boolean mBeaconEvent = false;
     String mFrameGen="";
 
+    RippleBackground rippleBackground;
+
+
     /***********************************************************************************/
     /**
      * Loads shared preference saved values into variables
      */
     private void loadPreferences(){
-        //pref_plate_id= preferences.getString(getString(R.string.pref_plate_id),"1234 DIA");
-        //pref_loc_acc_id = preferences.getString(getString(R.string.pref_loc_acc_id),"200");
         pref_email = preferences.getString(getString(R.string.pref_email),"mbriceno@minsait.com");
-        maxAccuracy = 200;//Integer.parseInt(pref_loc_acc_id);
+        maxAccuracy = 200;
     }
 
     private void checkDeviceBleFeatures(){
@@ -152,7 +155,6 @@ public class MainActivity extends AppCompatActivity {
         preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         preferencesEditor = preferences.edit();
 
-
         playButtonState = preferences.getBoolean("playButtonState",false);
         loadPreferences();
         checkDeviceBleFeatures();
@@ -172,6 +174,8 @@ public class MainActivity extends AppCompatActivity {
         mFramesGenView = (TextView)findViewById(R.id.frames_gen_value) ;
         mAccuracyView = (TextView) findViewById(R.id.accuracy_value);
         mBeaconImageView = (ImageView) findViewById(R.id.beacon_view);
+
+        rippleBackground=(RippleBackground)findViewById(R.id.content);
 
         Log.i(TAG,"Former Play button state: "+preferences.getBoolean("playButtonState",false));
     }
@@ -247,6 +251,9 @@ public class MainActivity extends AppCompatActivity {
 
         if(playButtonState){
             requestLocationEnabled();
+            if(!rippleBackground.isRippleAnimationRunning()){
+                rippleBackground.startRippleAnimation();
+            }
             if(!isServiceRunning()){
                 launchTrackingService();
             }
@@ -300,8 +307,12 @@ public class MainActivity extends AppCompatActivity {
         }
         else if (id == R.id.action_play) {
             if(!playButtonState){
-                //final RippleBackground rippleBackground=(RippleBackground)findViewById(R.id.content);
-                //rippleBackground.startRippleAnimation();
+
+                mBeaconImageView.setVisibility(View.INVISIBLE);
+                if(rippleBackground.isRippleAnimationRunning()){
+                    rippleBackground.stopRippleAnimation();
+                }
+                rippleBackground.startRippleAnimation();
 
                 invalidateOptionsMenu();
                 requestLocationEnabled();
@@ -318,6 +329,7 @@ public class MainActivity extends AppCompatActivity {
             }
             else{
                 playButtonState = false;
+                rippleBackground.stopRippleAnimation();
                 invalidateOptionsMenu();
                 preferencesEditor.putBoolean("playButtonState", false);
                 preferencesEditor.commit();
@@ -488,9 +500,24 @@ public class MainActivity extends AppCompatActivity {
         mAccYTextView.setText(mAccelY);
         mAccZTextView.setText(mAccelZ);
         mFramesGenView.setText(mFrameGen);
+
         if(mBeaconEvent){
             mBeaconImageView.setVisibility(View.VISIBLE);
             Toast.makeText(getApplicationContext(),"BEACON FOUND! :)", Toast.LENGTH_LONG).show();
+            playButtonState = false;
+            invalidateOptionsMenu();
+            preferencesEditor.putBoolean("playButtonState", false);
+            preferencesEditor.commit();
+            if(rippleBackground.isRippleAnimationRunning()){
+                rippleBackground.stopRippleAnimation();
+            }
+
+            actualLogFile = null;
+            framesGen = 0;
+            framesSent = 0;
+
+            stopTrackingService();
+
         }
     }
 
@@ -522,7 +549,7 @@ public class MainActivity extends AppCompatActivity {
                 mAccelY = intent.getStringExtra("sens-update-accY");
                 mAccelZ = intent.getStringExtra("sens-update-accZ");
                 mBeaconEvent = intent.getBooleanExtra("sens-update-beaconEvent",false);
-                //TODO Fetch sensor data from intent
+                //TODO Fetch sensor data from intent to have them available in MainActivity
             }
             else if(intent.getAction().equals(TrackingService.ACTION_FRAME_GEN)){
                mFrameGen = intent.getStringExtra("frame_generated");

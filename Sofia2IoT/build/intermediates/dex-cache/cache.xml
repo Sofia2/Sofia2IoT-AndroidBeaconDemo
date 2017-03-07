@@ -2,13 +2,22 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="C:\Users\mbriceno.INDRA\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_ca5dbe452e498ec7eb6dd2b7113c40fb8c0709ce\classes.dex" />
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.1.0_6eccd3f12084a6b566abeb408decec62ea83d011.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.1.0_c794a4e70b9f14c6160115a11847d063bc32fa10.jar" />
     </item>
     <item
         is-multidex="false"
@@ -21,30 +30,21 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.0_e3185ea9ea3a0a331ba3beeb6aabce3e0fa0e0f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
         <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.0_5fa86603c1e0d589791998e6d7f4d17a5383f27d.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="dd7676ac12aa6653718b7ea33d93ce9d6915d526">
-        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.2.0_2c9d0537059363bd1ef39a2072a883d201973b4c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_5fa86603c1e0d589791998e6d7f4d17a5383f27d\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -56,15 +56,6 @@
         <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.1.0_34c25d55d8e99e996525e87fc1d5a042652a2ece.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_34c25d55d8e99e996525e87fc1d5a042652a2ece\classes.dex" />
-    </item>
-    <item
         is-multidex="false"
         jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.2.0\jars\classes.jar"
         jumboMode="false"
@@ -74,15 +65,6 @@
         <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-9.2.0_950d128cc3ad0b85c5bc143162a7ec88799d578f.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="593fbaec1c3e100480a2bd72457b64b7dde6ac2d">
-        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.2.0_950d128cc3ad0b85c5bc143162a7ec88799d578f\classes.dex" />
-    </item>
-    <item
         is-multidex="false"
         jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\jars\classes.jar"
         jumboMode="false"
@@ -90,123 +72,6 @@
         revision="25.0.2"
         sha1="dd7676ac12aa6653718b7ea33d93ce9d6915d526">
         <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.2.0_2c9d0537059363bd1ef39a2072a883d201973b4c.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\9.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a03f4d605b0f29222c2ddf8b7896258cb4b92def">
-        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-9.2.0_ee46bfce02b3a0f53e6dbdd91b2f634a9ac9a105\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.2.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="30489a97b06cc3945bdbcc1770089af9e3b3b64d">
-        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-9.2.0_2ad20d0dec862fc53af34b10de43f9add3e9e029.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_2948740362c999848a62f8c83218ad4b652e9a04\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.1.0_2948740362c999848a62f8c83218ad4b652e9a04.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="30489a97b06cc3945bdbcc1770089af9e3b3b64d">
-        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.2.0_2ad20d0dec862fc53af34b10de43f9add3e9e029\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\9.2.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a03f4d605b0f29222c2ddf8b7896258cb4b92def">
-        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-location-9.2.0_ee46bfce02b3a0f53e6dbdd91b2f634a9ac9a105.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_c794a4e70b9f14c6160115a11847d063bc32fa10\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.1.0_6eccd3f12084a6b566abeb408decec62ea83d011.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_e3185ea9ea3a0a331ba3beeb6aabce3e0fa0e0f1\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.1.0_c794a4e70b9f14c6160115a11847d063bc32fa10.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b751f8da7ee35c6f41d338091801f5d412fd595d">
-        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_2807f6a95ee14341f7592b72ae8bf248d2bcdf69\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.0_e3185ea9ea3a0a331ba3beeb6aabce3e0fa0e0f1.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_f81558c819aac71dc017d52c0ae31cc6aa12717c\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -227,49 +92,40 @@
         <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.1.0_9b969175a08a048ef948e06d52b63717fdeeb3f6.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.1.0\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
-        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_4fbd855502cb4e942d6a981c36790806c0ad6df4\classes.dex" />
+        sha1="7f2420506110902f033406b25697cf97ee8c38b2">
+        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-25.1.0_73ae4f20128372409bf5093ab00650e88d5ba4ca.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.2.0\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_9b969175a08a048ef948e06d52b63717fdeeb3f6\classes.dex" />
+        sha1="30489a97b06cc3945bdbcc1770089af9e3b3b64d">
+        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-9.2.0_2ad20d0dec862fc53af34b10de43f9add3e9e029.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="81f3772c284888a9c5b32646ba9f1a265fd1fe8b">
-        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_05c4f02b537611a708d89a923841a93069a4dc95\classes.dex" />
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.1.0_2948740362c999848a62f8c83218ad4b652e9a04.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.2.0\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.skyfishjy.ripplebackground\library\1.0.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="299e04800d1169b9f3dd04c376c7b266a3594cca">
-        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-9.2.0_9d1e75f60ab1e1ae2333566578fe9e0b83d4bf05\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_6eccd3f12084a6b566abeb408decec62ea83d011\classes.dex" />
+        sha1="5a7cf2a41aedccc427107ebb37762a5e2f5be590">
+        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\pre-dexed\debug\com.skyfishjy.ripplebackground-library-1.0.1_c99d7246c9537895525d724de38070f243a95362.jar" />
     </item>
     <item
         is-multidex="false"
@@ -288,6 +144,15 @@
         revision="25.0.2"
         sha1="aee64634871d88a419d59eb743c1258a60f19700">
         <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.0_f81558c819aac71dc017d52c0ae31cc6aa12717c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\9.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a03f4d605b0f29222c2ddf8b7896258cb4b92def">
+        <dex dex="C:\Users\mbriceno.INDRA\MyStuff\Sofia2IoT-AndroidBeaconDemo\Sofia2IoT\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-location-9.2.0_ee46bfce02b3a0f53e6dbdd91b2f634a9ac9a105.jar" />
     </item>
 
 </items>

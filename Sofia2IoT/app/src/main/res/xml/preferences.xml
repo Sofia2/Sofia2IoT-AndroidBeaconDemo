@@ -20,17 +20,18 @@
             android:key="@string/pref_ontology"
             android:title="@string/pref_ontology_name"
             android:summary="@string/pref_ontology_summary"
-            android:defaultValue="UPM_Curso_00"/>
+            android:defaultValue="demo_sofia2IoT_beaconFrame"/>
+
         <EditTextPreference
             android:key="@string/pref_thinkp"
             android:title="@string/pref_thinkp_name"
             android:summary="@string/pref_thinkp_summary"
-            android:defaultValue="UPM_CURSO_00:UPM_CURSO_00_01"/>
+            android:defaultValue="demo_sofia2IoT_androidKP:demo_sofia2IoT_androidKP_01"/>
         <EditTextPreference
             android:key="@string/pref_token"
             android:title="@string/pref_token_name"
             android:summary="@string/pref_token_summary"
-            android:defaultValue="1ac393b3e22f4063bedd8f379f78dcb6"/>
+            android:defaultValue="e2c1734d1d7b4f12a53480d12ed112c2"/>
         
     </PreferenceCategory>
 </PreferenceScreen>

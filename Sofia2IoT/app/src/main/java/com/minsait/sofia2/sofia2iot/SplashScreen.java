@@ -71,7 +71,7 @@ public class SplashScreen extends Activity {
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         switch (requestCode) {
-            case 1: {                // If request is cancelled, the result arrays are empty.
+            case 1: {
                 if (grantResults.length > 0
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     new Handler().postDelayed(new Runnable() {
@@ -111,10 +111,8 @@ public class SplashScreen extends Activity {
 
     private void createAndShowAlertDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Aviso importante");
-        /*builder.setMessage("Al activar esta aplicación se utilizará la ubicación de su smartphone para " +
-                "fines de mejora en los procesos de servicio de DIA");*/
-        builder.setMessage("Al activar esta aplicación se utilizará la ubicación de su smartphone");
+        builder.setTitle(R.string.alert_title_loc);
+        builder.setMessage(R.string.alert_title_msg);
         builder.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 Intent firstIntent = new Intent(getApplicationContext(),MainActivity.class);

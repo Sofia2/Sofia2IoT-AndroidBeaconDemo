@@ -20,18 +20,18 @@
             android:key="@string/pref_ontology"
             android:title="@string/pref_ontology_name"
             android:summary="@string/pref_ontology_summary"
-            android:defaultValue="demo_sofia2IoT_beaconFrame"/>
+            android:defaultValue="YOUR_ONTOLOGY"/>
 
         <EditTextPreference
             android:key="@string/pref_thinkp"
             android:title="@string/pref_thinkp_name"
             android:summary="@string/pref_thinkp_summary"
-            android:defaultValue="demo_sofia2IoT_androidKP:demo_sofia2IoT_androidKP_01"/>
+            android:defaultValue="YOUR_THINKP:YOUR_THINKP_01"/>
         <EditTextPreference
             android:key="@string/pref_token"
             android:title="@string/pref_token_name"
             android:summary="@string/pref_token_summary"
-            android:defaultValue="e2c1734d1d7b4f12a53480d12ed112c2"/>
+            android:defaultValue="YOUR_TOKEN"/>
         
     </PreferenceCategory>
 </PreferenceScreen>

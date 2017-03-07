@@ -245,7 +245,7 @@
             android:layout_marginBottom="6dp"
             android:layout_toLeftOf="@id/centerImage"
             android:layout_marginRight="6dp"
-            android:src="@drawable/circlesofia"
+            android:src="@drawable/circle_sofia"
             android:visibility="invisible"/>
     </com.skyfishjy.library.RippleBackground>
 

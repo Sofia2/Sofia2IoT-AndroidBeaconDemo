@@ -64,9 +64,10 @@ public class TrackingService extends Service implements LocationListener, Google
     public static final String ACTION_FRAME_GEN = "TrackingService-FGen";
     public static final String TAG = "TrackingService";
 
-    private final static String TOKEN = "1ac393b3e22f4063bedd8f379f78dcb6";
-    private final static String KP_INSTANCE = "UPM_CURSO_00:UPM_CURSO_00_01_EST";
-    private final static String ONTOLOGY_NAME = "UPM_Curso_00";
+    //TODO Please insert here your Sofia2 data
+    private final static String TOKEN = "YOUR_TOKEN";
+    private final static String KP_INSTANCE = "YOUR_THINKP:YOUR_THINKP_01";
+    private final static String ONTOLOGY_NAME = "YOUR_ONTOLOGY";
 
     private final int OFFLINE_MODE = 0;
     private final int ONLINE_MODE = 1;
